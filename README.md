@@ -7,7 +7,6 @@ npm i async-event-emitter
 ```
 
 ## Example
-
 ```
 const AsyncEventEmitter = require('async-event-emitter');
 const aee = new AsyncEventEmitter();
@@ -44,6 +43,8 @@ aee.once('test', async (arg1, arg2) => {
     await aee.emit('test', 'arg-11', 'arg-22');
     
     console.log('--- event emitters has been finished ---');
+    console.log(aee.hasSubscribe('test'));
+    console.log(aee.hasSubscribe('test2'));
 })();
 ```
 
@@ -56,6 +57,8 @@ Output:
 1 'arg-11' 'arg-22'
 2 'arg-11' 'arg-22'
 --- event emitters has been finished ---
+true
+false
 ```
 
 ## Inheritance

@@ -34,5 +34,8 @@ AsyncEventEmitter.prototype.emit = async function (eventName) {
 
     return true;
 };
+AsyncEventEmitter.prototype.hasSubscribe = function (eventName) {
+    return !!this.__asyncEventEmitterEvents[eventName];
+};
 
 module.exports = AsyncEventEmitter;
