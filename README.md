@@ -3,12 +3,12 @@ Asynchronous with async/await
 
 ## Install
 ```
-npm i async-event-emitter
+npm i @antonbarinov/event-emitter-async
 ```
 
 ## Example
 ```
-const AsyncEventEmitter = require('async-event-emitter');
+const AsyncEventEmitter = require('@antonbarinov/event-emitter-async');
 const aee = new AsyncEventEmitter();
 
 const wait = (ms) => new Promise((resolve) => {
