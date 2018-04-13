@@ -1,0 +1,24 @@
+{
+  "name": "async-event-emitter",
+  "version": "1.0.0",
+  "description": "Asynchronous with async/await",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "author": {
+    "name": "Barinov Anton"
+  },
+  "keywords": [
+    "modules"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonbarinov/AsyncEventEmitter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/antonbarinov/AsyncEventEmitter/issues"
+  },
+  "homepage": "https://github.com/antonbarinov/AsyncEventEmitter"
+}
