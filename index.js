@@ -16,12 +16,7 @@ AsyncEventEmitter.prototype.once = function (eventName, func) {
         executed: false
     });
 };
-AsyncEventEmitter.prototype.emit = async function (eventName) {
-    let args = [];
-    for (let k in arguments) {
-        if (k > 0) args.push(arguments[k]);
-    }
-
+AsyncEventEmitter.prototype.emit = async function (eventName, ...args) {
     const events = this.__asyncEventEmitterEvents[eventName] || [];
     for (let event of events) {
         if (event.once) {

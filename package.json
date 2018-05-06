@@ -1,6 +1,6 @@
 {
   "name": "@antonbarinov/event-emitter-async",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Asynchronous with async/await",
   "main": "index.js",
   "dependencies": {},
